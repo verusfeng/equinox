@@ -25,3 +25,8 @@ equinox release \
 ```
 
 5. adding-update-code
+
+## release
+To build and release this program with Equinox, replace go build with equinox release. The Equinox-specific options are covered in the publishing section below.
+
+$ equinox release [options] github.com/acme/rocket
