@@ -1,5 +1,6 @@
 # equinox
 
+0. all bin file will complie on local pc and then upload to server.
 ## Step
 
 1. How it works
@@ -30,3 +31,20 @@ equinox release \
 To build and release this program with Equinox, replace go build with equinox release. The Equinox-specific options are covered in the publishing section below.
 
 $ equinox release [options] github.com/acme/rocket
+
+1. other cmd 
+	- equinox.exe release --config .\config.yaml --version [verson] --channel stable [github_packageName]
+		- .config.yaml configure file .
+		
+```yaml
+# saved in config.yaml
+app: app_96H5xG6nZm1
+signing-key: ./path/to/equinox.key
+token: YOUR_TOKEN_HERE
+platforms: [
+  # darwin_amd64, darwin_386,
+  # linux_amd64, linux_386,
+  # windows_amd64, windows_386
+]
+
+```
